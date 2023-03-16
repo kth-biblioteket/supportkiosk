@@ -1,0 +1,2 @@
+text: <i class="fa fa-house"></i>
+url: https://apps-ref.lib.kth.se/supportkiosk 
