@@ -1,0 +1,95 @@
+.supportkiosk-home { 
+
+   padding-top: 0px !important;  
+
+} 
+
+  
+
+body {  
+
+   padding-top: 100px !important;  
+
+}  
+
+  
+
+#mainRouterOutlet { top: 100px !important } 
+
+  
+
+#homeButt, #eb1 { 
+
+    position: absolute; 
+
+    background-color: #1954A6 !important; 
+
+    width: 70px !important; 
+
+    height: 70px !important; 
+
+    top: 15px !important; 
+
+    display: flex; 
+
+    justify-content: center; 
+
+    align-items: center; 
+
+    border-radius: 10px; 
+
+    box-shadow: 0 1.5rem 1rem rgb(0 0 0 / 35%); 
+
+    padding: 20px; 
+
+    margin: 5px; 
+
+    box-sizing: border-box; 
+
+} 
+
+  
+
+#homeButt i:before, #eb1 i:before { 
+
+    1position: absolute; 
+
+    font-family: 'Font Awesome 6 Free'; 
+
+    1top: 0px; 
+
+    left: 110px; 
+
+    content: "\f015"; 
+
+    font-size: 46px !important; 
+
+    color: rgb(255 255 255 / 75%) !important; 
+
+} 
+
+  
+
+.fa-circle-left { 
+
+   font-size: 48px !important; 
+
+} 
+
+  
+
+#GoBackButton { 
+
+   top: 30px !important;  
+
+   right: 20px !important; 
+
+   left: unset !important; 
+
+   background-color: transparent !important;  
+
+   color: black !important; 
+
+   padding: 0px !important; 
+
+} 
