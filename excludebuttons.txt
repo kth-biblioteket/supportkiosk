@@ -1,0 +1,7 @@
+apps-ref.lib.kth.se/supportkiosk 
+
+apps-ref.lib.kth.se/supportkiosk/libraryaccounts.php 
+
+apps-ref.lib.kth.se/supportkiosk/libraryaccounts.php?lang=sv 
+
+apps-ref.lib.kth.se/supportkiosk/libraryaccounts.php?lang=en
