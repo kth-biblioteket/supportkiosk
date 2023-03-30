@@ -1,0 +1,21 @@
+version: "3.6"
+
+services:
+  mailprint:
+    container_name: "supportkiosk"
+    image: ghcr.io/kth-biblioteket/supportkiosk:${REPO_TYPE}
+    restart: "always"
+    env_file:
+      - supportkiosk.env
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.supportkiosk.rule=Host(`${DOMAIN_NAME}`)"
+      - "traefik.http.routers.supportkiosk.entrypoints=websecure"
+      - "traefik.http.routers.supportkiosk.tls=true"
+      - "traefik.http.routers.supportkiosk.tls.certresolver=myresolver"  
+    networks:
+      - "apps-net"
+
+networks:
+  apps-net:
+    external: true
