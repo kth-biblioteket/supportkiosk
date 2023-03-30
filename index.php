@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script/script.js?ver=1.1"></script>
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="./css/styles.css?ver=1.5" rel="stylesheet">
+    <title>KTH Biblioteket</title>
+</head>
+
+<body class="supportkiosk-home" osncontextmenu="return false;">
+    <!--video autoplay muted loop id="myVideo">
+        <source src="videos/balcony_book_heart_domino.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video-->
+
+    <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+            <!-- Sida 1 -->
+            <div class="swiper-slide">
+                <div class='appbuttons'>
+                    <div id="app1" class="grid-container _sv">
+                        <div class="grid-item appbutton app1">
+                            <a target="_self" href="/mrbsgrupprumsupportkiosk?kiosk=true&lang=sv">Boka grupprum</a>
+                        </div>
+                        <div class="grid-item appbutton app2">
+                            <a target="_self" href="https://wagnerguide.com/c/kth/kth?kiosk=true&lang=sv">Karta över
+                                biblioteket</a>
+                        </div>
+                        <div class="grid-item appbutton app3">
+                            <a target="_self"
+                                href="https://kth-ch.primo.exlibrisgroup.com/discovery/search?vid=46KTH_INST:46KTH_Kiosk_Touch&lang=sv">Sök
+                                i bibliotekets söktjänst Primo</a>
+                        </div>
+                        <div class="grid-item appbutton app4">
+                            <a target="_self"
+                                href="https://apps.lib.kth.se/supportkiosk/libraryaccounts.php?lang=sv">Aktivera/ansök
+                                om bibliotekskonto</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engelska -->
+                <div class='appbuttons'>
+                    <div id="app2" class="grid-container _en">
+                        <div class="grid-item appbutton app1">
+                            <a target="_self" href="/mrbsgrupprumsupportkiosk?kiosk=true&lang=en">Book a group study room</a>
+                        </div>
+                        <div class="grid-item appbutton app2">
+                            <a target="_self" href="https://wagnerguide.com/c/kth/kth?kiosk=true&lang=en">Library
+                                map</a>
+                        </div>
+                        <div class="grid-item appbutton app3">
+                            <a target="_self"
+                                href="https://kth-ch.primo.exlibrisgroup.com/discovery/search?vid=46KTH_INST:46KTH_Kiosk_Touch&lang=en">Search
+                                in the library search service Primo</a>
+                        </div>
+                        <div class="grid-item appbutton app4">
+                            <a target="_self"
+                                href="https://apps.lib.kth.se/supportkiosk/libraryaccounts.php?lang=en">Activate/apply
+                                for library account</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sida 2 -->
+            <div class="swiper-slide">
+                <div class='appbuttons'>
+                    <div id="app3" class="grid-container _sv">
+                        <div class="grid-item appbutton app5">
+                            <a target="_self"
+                                href="https://apps.lib.kth.se/smartsign/timeeditjq/index_kiosk.html?kiosk=true&lang=sv">Vad
+                                händer idag?</a>
+                        </div>
+                        <div class="grid-item appbutton app6">
+                            <a target="_self"
+                                href="https://apps.lib.kth.se/smartsign/imas/index_kiosk.html?kiosk=true&lang=sv">Besökare
+                                i realtid</a>
+                        </div>
+                        <div class="grid-item appbutton app3 emptybutton">
+                            <a target="_self" href=""></a>
+                        </div>
+                        <div class="grid-item appbutton app4 emptybutton">
+                            <a target="_self" href=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Engelska -->
+                <div class='appbuttons'>
+                    <div id="app4" class="grid-container _en">
+                        <div class="grid-item appbutton app5">
+                            <a target="_self"
+                                href="https://apps.lib.kth.se/smartsign/timeeditjq/index_kiosk.html?kiosk=true&lang=en">What
+                                is going on today?</a>
+                        </div>
+                        <div class="grid-item appbutton app6">
+                            <a target="_self"
+                                href="https://apps.lib.kth.se/smartsign/imas/index_kiosk.html?kiosk=true&lang=en">Real-time
+                                occpancy </a>
+                        </div>
+                        <div class="grid-item appbutton app3 emptybutton">
+                            <a target="_self" href=""></a>
+                        </div>
+                        <div class="grid-item appbutton app4 emptybutton">
+                            <a target="_self" href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-plugin-pagination"></div>
+    </div>
+    <div class="languageswitch"
+        style='display:flex; position:absolute; top:0; right:0;width: 50px;padding:10px;z-index: 9999;'>
+        <div class="_sv" onclick="changelang('en')"><img style="width: 100%"
+                src="https://static.sys.kth.se/gvs/kthb/img/flags/gb.svg"></div>
+        <div class="_en" onclick="changelang('sv')"><img style="width: 100%"
+                src="https://static.sys.kth.se/gvs/kthb/img/flags/se.svg"></div>
+    </div>
+    <!-- Tiny-Swiper JS -->
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/index.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/navigation.min.js"></script>
+    <script src="https://unpkg.com/tiny-swiper@latest/lib/modules/pagination.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            navigation: {
+                prevEl: ".swiper-button-prev",
+                nextEl: ".swiper-button-next"
+            },
+            pagination: {
+                el: ".swiper-plugin-pagination",
+                clickable: true,
+                bulletClass: "swiper-plugin-pagination__item",
+                bulletActiveClass: "is-active"
+            },
+            plugins: [SwiperPluginPagination, SwiperPluginNavigation]
+        });
+    </script>
+</body>
+
+</html>
