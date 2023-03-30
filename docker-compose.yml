@@ -1,7 +1,7 @@
 version: "3.6"
 
 services:
-  mailprint:
+  supportkiosk:
     container_name: "supportkiosk"
     image: ghcr.io/kth-biblioteket/supportkiosk:${REPO_TYPE}
     restart: "always"
@@ -9,7 +9,7 @@ services:
       - supportkiosk.env
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.supportkiosk.rule=Host(`${DOMAIN_NAME}`)"
+      - "traefik.http.routers.supportkiosk.rule=Host(`${DOMAIN_NAME}`) && PathPrefix(`${PATHPREFIX}`)"
       - "traefik.http.routers.supportkiosk.entrypoints=websecure"
       - "traefik.http.routers.supportkiosk.tls=true"
       - "traefik.http.routers.supportkiosk.tls.certresolver=myresolver"  
