@@ -171,11 +171,24 @@ body {
     margin: 0px;
     height: 100%;
     background-color: #1954A6;
-    font-family: "Open Sans",Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: "Figtree", Arial, "Helvetica Neue", helvetica, sans-serif;
+    /*font-family: "Open Sans",Source Sans Pro,Helvetica Neue,Helvetica,Arial,sans-serif;*/
     background-image: url(../img/biblioteket_idag_1280_1024.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+body.supportkiosk-home:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* left: 50%; */
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 100%, transparent 0%);
+    opacity: 1;
+    z-index: 0;
 }
 
 #myVideo {
@@ -192,6 +205,13 @@ html[lang="sv"] ._en {
 
 html[lang="en"] ._sv {
     display: none;
+}
+
+.kthlogo {
+    position: absolute;
+    width: 120px;
+    left: 452px;
+    top: 55px;
 }
 
 .languageswitch {
