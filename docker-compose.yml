@@ -12,7 +12,9 @@ services:
       - "traefik.http.routers.supportkiosk.rule=Host(`${DOMAIN_NAME}`) && PathPrefix(`${PATHPREFIX}`)"
       - "traefik.http.routers.supportkiosk.entrypoints=websecure"
       - "traefik.http.routers.supportkiosk.tls=true"
-      - "traefik.http.routers.supportkiosk.tls.certresolver=myresolver"  
+      - "traefik.http.routers.supportkiosk.tls.certresolver=myresolver"
+    volumes:
+      - /local/docker/supportkiosk/custom.js:/usr/share/nginx/html/supportkiosk/script/custom.js 
     networks:
       - "apps-net"
 
